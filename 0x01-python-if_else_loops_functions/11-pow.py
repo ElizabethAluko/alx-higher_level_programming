@@ -2,4 +2,4 @@
 def pow(a, b):
     """Returns a to the power of b"""
 
-    return (pow(a, b))
+    return (pow(a b))
