@@ -1,4 +1,5 @@
 #include "lists.h"
+#include <stdlib.h>
 
 /**
  * *insert_node - pointer of the new node.
@@ -8,11 +9,10 @@
  */
 listint_t *insert_node(listint_t **head, int number)
 {
-	listint_t *prt = *head, *new;
+	listint_t *ptr = *head, *new;
 
 	new = malloc(sizeof(listint_t));
 	new->n = number;
-	new->next = NULL;
 
 	if (*head == NULL)
 		return (0);
