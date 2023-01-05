@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-# 2-args.py
 
 if __name__ == "__main__":
     """print arguments and its number"""
@@ -7,7 +6,7 @@ if __name__ == "__main__":
 
     if (len(sys.argv) == 1):
         print("0 arguments.")
-    if (len(sys.argv) == 2):
+    elif (len(sys.argv) == 2):
         print("1 argument:")
     else:
         print("{} arguments:".format(len(sys.argv) - 1))
