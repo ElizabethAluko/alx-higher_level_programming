@@ -6,5 +6,3 @@ def multiple_returns(sentence):
     else:
         tuple_fcl = (len(sentence), sentence[0])
     return (tuple_fcl)
-
-
