@@ -1,10 +1,10 @@
 #!/usr/bin/python3
 
 def multiple_returns(sentence):
-    if sentence == 0:
-        first = None
-        lenght = 0
+    if not sentence:
+        tuple_fcl = (0, None)
     else:
-        first = sentence[0]
-        lenght = len(sentence)
-    return ((first, lenght))
+        tuple_fcl = (len(sentence), sentence[0])
+    return (tuple_fcl)
+
+
