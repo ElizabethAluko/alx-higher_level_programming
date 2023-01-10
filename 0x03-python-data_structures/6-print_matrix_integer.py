@@ -6,5 +6,8 @@ def print_matrix_integer(matrix=[[]]):
         return (0)
     for items in matrix:
         for j in items:
-            print("{:d}".format(j), end=" ")
+            if items[-1] == j:
+                print("{:d}".format(j), end="")
+            else:
+                print("{:d}".format(j), end=" ")
         print()
