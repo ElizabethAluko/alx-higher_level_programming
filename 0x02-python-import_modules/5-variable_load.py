@@ -3,6 +3,5 @@
 
 if __name__ == "__main__":
     """Print the value of variable and a from variable_load_5."""
-    from variable_load_5 import a as A
-    print("{:d}".format(A))
-
+    from variable_load_5 import a
+    print("{:d}".format(a))
