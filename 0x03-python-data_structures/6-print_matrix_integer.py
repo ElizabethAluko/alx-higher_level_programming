@@ -3,7 +3,7 @@
 def print_matrix_integer(matrix=[[]]):
     """A matrix of integers"""
     for items in matrix for j in items:
-        if not (j + 1):
+        if not items[]:
             print("{:d}".format(j, end=" "))
             print()
         else:
