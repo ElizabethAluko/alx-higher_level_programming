@@ -2,5 +2,6 @@
 
 def print_matrix_integer(matrix=[[]]):
     """A matrix of integers"""
-    for i in matrix for j in matrix.items:
-        print("{}".format(matrix[i][j]))
+    for items in matrix for j in items:
+        print("{}".format(j, end=" "))
+    print()
