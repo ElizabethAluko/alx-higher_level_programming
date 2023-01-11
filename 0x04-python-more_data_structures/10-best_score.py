@@ -4,7 +4,7 @@ def best_score(a_dictionary):
     max = 0
     for k, v in a_dictionary.items():
         if v > max:
-            v = max
+            max = v
         else:
             continue
     return (sum)
