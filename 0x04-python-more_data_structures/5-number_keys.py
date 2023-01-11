@@ -6,8 +6,8 @@ def number_keys(a_dictionary):
         k += 1
     return (k)
 
-#step2
-#def number_keys(a_dictionary):
-#    for i, j in enumerate(a_dictionary):
-#        continue
-#    return (i + 1)
+# step2
+# def number_keys(a_dictionary):
+#     for i, j in enumerate(a_dictionary):
+#         continue
+#     return (i + 1)
