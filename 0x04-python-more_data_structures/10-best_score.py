@@ -1,9 +1,10 @@
 #!/usr/bin/python3
 
 def best_score(a_dictionary):
-    max = 0
+    initK = list(a_dictionary.keys())[0]
+    maxV = a_dictionary[initK]
     for k, v in a_dictionary.items():
-        if v > max:
-            max = v
-            key = a_dictionary[k]
-    return (key)
+        if v > maxV:
+            maxV = v
+            initK = k
+    return (initK)
