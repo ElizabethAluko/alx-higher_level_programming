@@ -3,8 +3,9 @@
 def weight_average(my_list=[]):
     if not my_list:
         return (0)
-    avrg, div = 0
+    avrg = 0
+    div = 0
     for t in my_list:
         avrg += tup[0] * tup[1]
         div += tup[1]
-    return (float(avrg / div))
+    return ((float(avrg / div))
