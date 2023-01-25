@@ -7,13 +7,14 @@
 class Square:
     """A square has four equal sides"""
 
-    def __init__(self, size=0):
+    def __init__(self, size=0, position=(0, 0)):
         """Create a new Square object.
 
         Args:
             size (int): The size of the new square object
         """
         self.size = size
+        self.position = position
 
     @property
     def size(self):
