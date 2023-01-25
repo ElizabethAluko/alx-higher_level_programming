@@ -13,19 +13,18 @@ class Square:
         Args:
             size (int): The size of the new square object
         """
-        self.set__size(size)
+@property
+    def size(self):
+        """Get/set the current size of the square."""
+        return (self.__size)
 
-    def get__size(self):
-        """It is use to get the __size"""
-        return self.__size
-
-    def set__size(self, size):
-        """It is used to set the value of __size"""
-        if not isinstance(size, int):
+    @size.setter
+    def size(self, value):
+        if not isinstance(value, int):
             raise TypeError("size must be an integer")
-        elif size < 0:
+        elif value < 0:
             raise ValueError("size must be >= 0")
-        self.__size = size
+        self.__size = value
 
     def area(self):
         """Define the area of the square"""
