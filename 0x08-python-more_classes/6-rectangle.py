@@ -90,5 +90,4 @@ class Rectangle:
         """print when deleting an object"""
 
         type(self).number_of_instances -= 1
-
         print("Bye rectangle...")
