@@ -9,11 +9,9 @@ class Rectangle:
 
     def __init__(self, width=0, height=0):
         """Create s new rectangle object"""
-
-        type(self).number_of_instances += 1
         self.width = width
         self.height = height
-
+        Rectangle.number_of_instances += 1
 
     @property
     def width(self):
@@ -75,7 +73,8 @@ class Rectangle:
         else:
             for i in range(self.__height):
                 for j in range(self.__width):
-                    rect += '#'
+                    rect += "#"
+
                 if (i < (self.__height - 1)):
                     rect += '\n'
             return (rect)
