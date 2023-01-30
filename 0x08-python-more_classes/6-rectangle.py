@@ -5,8 +5,9 @@
 
 class Rectangle:
     """Empty rectangle class"""
-    
+
     number_of_instances = 0
+
 
     def __init__(self, width=0, height=0):
         """Create s new rectangle object"""
