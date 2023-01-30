@@ -7,6 +7,7 @@ class Rectangle:
     """Empty rectangle class"""
     
     number_of_instances = 0
+    print_symbol = '#'
 
     def __init__(self, width=0, height=0):
         """Create s new rectangle object"""
@@ -74,7 +75,7 @@ class Rectangle:
         else:
             for i in range(self.__height):
                 for j in range(self.__width):
-                    rect += '#'
+                    rect += print_symbol
                 if (i < (self.__height - 1)):
                     rect += '\n'
             return (rect)
