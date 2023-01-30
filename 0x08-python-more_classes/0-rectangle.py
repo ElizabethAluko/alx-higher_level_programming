@@ -2,6 +2,7 @@
 
 """Contains a class"""
 
+
 class Rectangle:
     """Empty class rectangle"""
 
