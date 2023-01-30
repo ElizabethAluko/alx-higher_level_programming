@@ -5,7 +5,6 @@
 
 class Rectangle:
     """Empty rectangle class"""
-    
     number_of_instances = 0
     print_symbol = "#"
 
@@ -90,4 +89,4 @@ class Rectangle:
         """print when deleting an object"""
 
         print("Bye rectangle...")
-        Rectangle.number_of_instances -= 1
+        Rectangle.number_of_instances -= 1 # decrease the instance by one
