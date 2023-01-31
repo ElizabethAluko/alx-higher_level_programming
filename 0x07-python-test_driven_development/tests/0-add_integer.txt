@@ -1,0 +1,67 @@
+
+====================================
+How to use 0-add_integer.py function
+====================================
+
+This module difines a function ``add_integer(a, b=98)`` that adds two integers a, b.
+
+``add_integer(a, b=98)`` uses the mathematical operator '+' and returns a + b.
+
+Usage Instances:
+================
+
+case 1:
+
+    >>> add_integer = __import__('0-add_integer').add_integer
+    >>> add_integer(5, 6)
+    11
+
+case 2:
+
+   >>> add_integer(5, -6)
+   -1
+
+case 3:
+
+   >>> add_integer(5.0, 6.0)
+   11
+
+case 4:
+
+   >>> add_integers(5.7, 6.3)
+   11
+
+case 5:
+
+   >>> add_integer(-5.7, -6.3)
+   -11
+
+case 6:
+
+   >>> add_integer(7)
+   105
+
+case 7:
+    >>> add_integer("str", 6)
+    Traceback (most recent call last):
+    TypeError: a must be an integer
+
+case 8:
+   >>> add_integer(6, "str")
+   Traceback (most recent call last):
+   TypeError: b must be an integer
+
+case 9:
+   >>> add_integer("str", 6)
+   Traceback (most recent call last):
+   TypeError: a must be an integer
+
+case 10:
+   >>>add_integer("str", "str2")
+   Traceback (most recent call last):
+   TypeError: a must be an integer
+
+case 11:
+   add_integer("str", 6)
+    Traceback (most recent call last):
+    TypeError: a must be an integer
