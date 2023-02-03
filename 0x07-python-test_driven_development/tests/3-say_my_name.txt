@@ -1,0 +1,74 @@
+
+================================
+How to use 3-say_my_name.py file
+================================
+
+This module defines a function: say_my_name(first_name, last_name="")
+
+Usage
+=====
+
+say_my_name(first_name, last_name="") will print: "My name is <fistname> <lastname>".
+
+Test Cases
+==========
+
+case 1:
+    >>> say_my_name = __import__('3-say_my_name').say_my_name
+    >>> say_my_name("Aluko", "Elizabeth")
+    My name is Aluko Elizabeth
+
+-----------------------------------------------
+
+case 2:
+    >>> say_my_name("Aluko Elizabeth", "Charles the second")
+    My name is Aluko Elizabeth Charles the second
+
+------------------------------------------------
+
+case 3:
+    >>> say_my_name(4, "Elizabeth")
+    Traceback (most recent call last):
+    TypeError: first_name must be a string
+
+------------------------------------------------
+
+case 4:
+    >>> say_my_name("Aluko", 6)
+    Traceback (most recent call last):
+    TypeError: last_name must be a string
+
+------------------------------------------------
+
+case 5:
+    >>> say_my_name(["Elizabeth", "James"], "John")
+    Traceback (most recent call last):
+    TypeError: first_name must be a string
+------------------------------------------------
+
+case 6:
+    >>> say_my_name(["Elizabeth", "James"], ["John", "Peter"])
+    Traceback (most recent call last):              TypeError: first_name must be a string
+------------------------------------------------
+
+case 7:
+    >>> say_my_name({"Elizabeth": 8, "James": 34}, 87.2)
+    Traceback (most recent call last):
+    TypeError: first_name must be a string
+------------------------------------------------
+
+case 8:
+    >>> say_my_name()
+    Traceback (most recent call last):
+    TypeError: say_my_name() missing 1 required positional argument: 'first_name'
+------------------------------------------------
+
+case 9:
+    >>> say_my_name(None)
+    Traceback (most recent call last):
+    TypeError: first_name must be a string
+------------------------------------------------
+
+case 10:
+    >>> say_my_name("Elizabeth")
+    My name is Elizabeth
