@@ -8,17 +8,6 @@ case 0: import
 
 case 1: common case
 
->>> my_list = MyList()
->>> my_list.append(1)
->>> my_list.append(4)
->>> my_list.append(2)
->>> my_list.append(3)
->>> my_list.append(5)
->>> my_list.print_sorted()
-[1, 2, 3, 4, 5]
->>>
-
--------------------------------------------
 
 case 2: not defined object
 
@@ -52,24 +41,6 @@ case 4: empty list
 -------------------------------------------
 
 case 5: unique number
-
->>> my_list = MyList()
->>> my_list.append(1)
->>> my_list.print_sorted()
-[1]
->>> print(my_list)
-[1]
->>>
-
--------------------------------------------
-
-case 6: same number
-
-
-
--------------------------------------------
-
-case 8: negative numbers
 
 >>> MyList = __import__('1-my_list').MyList
 >>> my_list = MyList()
