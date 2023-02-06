@@ -53,6 +53,7 @@ case 4: Passed a List
 
 case 5: Negative number
 
+    >>> MyList = __import__('1-my_list').MyList
     >>> new_list = MyList()
     >>> new_list.append(1)
     >>> new_list.append(-5)
