@@ -45,7 +45,7 @@ case 3: Undefined object
 
 case 4: Passed a List
 
-    >>>a = [1, 9, 4]
+    >>> a = [1, 9, 4]
     >>> my_list = MyList(a)
     >>> my_list.print_sorted()
     [1, 4, 9]
