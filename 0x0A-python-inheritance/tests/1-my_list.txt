@@ -2,15 +2,6 @@
 Test for 1-my_list.py file
 ===========================
 
-1-my_list.py contains a class MyList that inherit from list.
-
-MyList has a public instance method: print_sorted(self).
-
-print_sorted(self) method prints a sorted (ascending sort) list of the list.
-
-All the elements of the list will be of type int.
-
-Usage
 =====
     Import MyList class:
     >>> MyList = __import__("1-my-list").MyList
