@@ -14,6 +14,7 @@ Usage
 =====
     Import MyList class:
     >>> MyList = __import__("1-my-list").MyList
+    >>>
 
 case 1: Normal use case
 
