@@ -17,8 +17,7 @@ class Student:
         only those attributes included in the list.
 
         """
-        if (type(attrs) == list):
-            for i in attrs:
-                if all(type(i) == str):
+        if (type(attrs) == list and
+                all(type(i) == str for i in attrs)):
             return {k: getattr(self, k) for k in attrs if hasattr(self, k)}
         return self.__dict__
