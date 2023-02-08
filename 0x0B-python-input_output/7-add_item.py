@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Define add-all arguments function"""
+"""Add add-all arguments to form a list function"""
 import sys
 
 
