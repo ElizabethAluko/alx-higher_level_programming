@@ -17,12 +17,8 @@ class Student:
         only those attributes included in the list.
 
         """
-        if attrs is None:
-            return self.__dict__
-        else:
-            new_dict = dict()
-            old_dict = self.__dict__
-            for (key, value) in old_dict.items():
-                if key in attrs:
-                    new_dict[key] = value
-            return new_dict
+        if (type(attrs) == list):
+            for i in attrs:
+                if all(type(i) == str):
+            return {k: getattr(self, k) for k in attrs if hasattr(self, k)}
+        return self.__dict__
