@@ -87,12 +87,15 @@ class Rectangle(Base):
         """Displays rectangle object with '#' in stdout"""
         for i in range(self.y):
             print(' ')
+
         for i in range(self.height):
             for w in range(self.x):
                 print(' ', end='')
+
             for j in range(self.width):
                 if j == self.width - 1:
                     print('#')
+
                 else:
                     print('#', end='')
 
@@ -126,6 +129,7 @@ class Rectangle(Base):
                 elif i == 4:
                     self.y = arg
                 i += 1
+
         elif kwargs and len(kwargs) != 0:
             for k, v in kwargs.items():
                 if k == "id":
