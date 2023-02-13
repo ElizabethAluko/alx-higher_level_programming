@@ -1,12 +1,14 @@
 #!/usr/bin/python3
 """Define a Rectangle class"""
+
 from models.base import Base
 
 
 class Rectangle(Base):
     """Rectangle class"""
 
-    def __init__(self, width, height, x=0, y=0, id=None):
+    def __init__(self, width, height, 
+            x=0, y=0, id=None):
         """Initiate the rectangle class"""
 
         super().__init__(id)
