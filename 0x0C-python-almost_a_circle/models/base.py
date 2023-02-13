@@ -10,7 +10,7 @@ class Base:
     def __init__(self, id=None):
         """Instantiate a new Base"""
 
-        if id != None:
+        if id is not None:
             self.id = id
 
         else:
