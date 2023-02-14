@@ -84,6 +84,7 @@ class Rectangle(Base):
             for j in range(self.width):
                 print('#', end='')
             print()
+
     def __str__(self):
         """Return defined string representation"""
         return ("[Rectangle] ({}) {}/{} - {}/{}".format(
