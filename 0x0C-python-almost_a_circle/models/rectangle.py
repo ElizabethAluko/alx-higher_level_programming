@@ -77,13 +77,15 @@ class Rectangle(Base):
     def display(self):
         """Displays rectangle object with '#' in stdout"""
         for i in range(self.y):
-            print(" ")
+            print("")
         for i in range(self.height):
             for w in range(self.x):
                 print(' ', end='')
             for j in range(self.width):
-                print('#', end='')
-            print()
+                if j == self.width - 1:
+                    print('#')
+                else:
+                    print('#', end='')
 
     def __str__(self):
         """Return defined string representation"""
