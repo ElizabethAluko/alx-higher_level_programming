@@ -68,6 +68,6 @@ class Base:
         try:
             with open(filename, "r") as f:
                 d_list = Base.from_json_string(f.read())
-                return [cls.create(**d) for d in list_dicts]
+                return [cls.create(**d) for d in d_list]
         except IOError:
             return []
