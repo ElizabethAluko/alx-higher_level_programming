@@ -80,7 +80,8 @@ class Rectangle(Base):
             print("")
             return
         for i in range(self.y):
-            print(' ')
+            if y != 0:
+                print(' ')
         for i in range(self.height):
             for w in range(self.x):
                 print(' ', end='')
