@@ -76,11 +76,8 @@ class Rectangle(Base):
 
     def display(self):
         """Displays rectangle object with '#' in stdout"""
-        if self.width == 0 or self.height == 0:
-            print("")
-            return
         for i in range(self.y):
-            print(' ')
+            print()
         for i in range(self.height):
             for w in range(self.x):
                 print(' ', end='')
