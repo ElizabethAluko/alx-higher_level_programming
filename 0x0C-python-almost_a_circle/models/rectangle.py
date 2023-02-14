@@ -82,11 +82,8 @@ class Rectangle(Base):
             for w in range(self.x):
                 print(' ', end='')
             for j in range(self.width):
-                if j == self.width - 1:
-                    print('#')
-                else:
-                    print('#', end='')
-
+                print('#', end='')
+            print()
     def __str__(self):
         """Return defined string representation"""
         return ("[Rectangle] ({}) {}/{} - {}/{}".format(
