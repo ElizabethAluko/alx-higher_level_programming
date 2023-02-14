@@ -30,7 +30,9 @@ class Base:
     def save_to_file(cls, list_objs):
         """write JSON string representation
         of the object"""
-        with open(Rectangle.json, "w") as f:
+        filename = cls.__name__ + ".json"
+
+        with open(filename, "w") as f:
             if list_objs is None:
                 f.write("[]")
             else:
