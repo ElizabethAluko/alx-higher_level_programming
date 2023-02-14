@@ -90,10 +90,10 @@ class Rectangle(Base):
     def __str__(self):
         """Return defined string representation"""
         return ("[Rectangle] ({}) {}/{} - {}/{}".format(self.id,
-        self.x,
-        self.y,
-        self.width,
-        self.height))
+            self.x,
+            self.y,
+            self.width,
+            self.height))
 
     def update(self, *args, **kwargs):
         """Assigns argument to each attribute"""
@@ -123,11 +123,11 @@ class Rectangle(Base):
                 if k == "id":
                     if v is None:
                         self.__init__(self.width, self.height,
-self.x, self.y)
+                                self.x, self.y)
                     else:
                         self.id = v
                 elif k == "width":
-                    self.width= v
+                    self.width = v
                 elif k == "height":
                     self.height = v
                 elif k == "x":
