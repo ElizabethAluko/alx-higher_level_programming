@@ -89,7 +89,8 @@ class Rectangle(Base):
 
     def __str__(self):
         """Return defined string representation"""
-        return ("[Rectangle] ({}) {}/{} - {}/{}".format(self.id,
+        return ("[Rectangle] ({}) {}/{} - {}/{}".format(
+            self.id,
             self.x,
             self.y,
             self.width,
@@ -106,7 +107,8 @@ class Rectangle(Base):
                         self.__init__(
                                 self.width,
                                 self.height,
-                                self.x, self.y)
+                                self.x,
+                                self.y)
                     else:
                         self.id = arg
                 elif i == 1:
@@ -123,7 +125,9 @@ class Rectangle(Base):
             for k, v in kwargs.items():
                 if k == "id":
                     if v is None:
-                        self.__init__(self.width, self.height,
+                        self.__init__(
+                                self.width,
+                                self.height,
                                 self.x, self.y)
                     else:
                         self.id = v
