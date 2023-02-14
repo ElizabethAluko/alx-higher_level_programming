@@ -25,3 +25,15 @@ class Base:
             return ("[]")
 
         return (json.dumps(list_dictionaries))
+
+    @classmethod
+    def save_to_file(cls, list_objs):
+        """write JSON string representation
+        of the object"""
+        with open(Rectangle.json, "w") as f:
+            if list_objs is None:
+                f.write("[]")
+            else:
+                d_string = [s.to_dictionary()
+                        for s in list_objs]
+                f.write(Base.to_json_string(d_string))
