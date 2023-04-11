@@ -2,8 +2,8 @@
 
 const myVar = parseInt(process.argv[2]);
 
-if (myVar) {
-  console.log('My number: '.concat(myVar));
-} else {
+if (process.argv.length < 3 || isNaN(myVar)) {
   console.log('Not a number');
+} else {
+  console.log('My number: '.concat(myVar));
 }
