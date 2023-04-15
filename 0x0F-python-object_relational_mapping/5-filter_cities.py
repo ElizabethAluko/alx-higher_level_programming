@@ -25,8 +25,8 @@ def main():
             ORDER BY cities.id", (state_name, ))
     rows = cur.fetchall()
 
-    for row in rows:
-        print(', '.join(row[0]))
+    """for row in rows:"""
+    print(', '.join([row[0] for row in rows]))
 
     cur.close()
     db.close()
