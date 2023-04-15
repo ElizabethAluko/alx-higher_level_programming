@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Contains a function that lists all cities from database"""
+"""Function that lists all cities from database"""
 
 import MySQLdb
 import sys
