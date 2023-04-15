@@ -1,8 +1,14 @@
 #!/usr/bin/python3
+"""Contains a function that select states from database"""
+
 import MySQLdb
 import sys
 
-if __name__ == '__main__':
+
+def main():
+    """
+       Function to select all states from database
+    """
     mysql_user = sys.argv[1]
     mysql_password = sys.argv[2]
     db_name = sys.argv[3]
@@ -19,3 +25,6 @@ if __name__ == '__main__':
 
     cur.close()
     db.close()
+
+if __name__ == '__main__':
+    main()
