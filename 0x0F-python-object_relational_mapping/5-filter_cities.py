@@ -26,7 +26,7 @@ def main():
     rows = cur.fetchall()
 
     for row in rows:
-        print(', '.join(row))
+        print(', '.join(row[0]))
 
     cur.close()
     db.close()
