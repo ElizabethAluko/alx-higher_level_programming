@@ -21,7 +21,7 @@ def main():
 
     cur = db.cursor()
     cur.execute("SELECT * FROM states WHERE\
-            BINARY name = %s ORDER BY id ASC", (state_name))
+            name = %s ORDER BY id ASC", (state_name, ))
     rows = cur.fetchall()
 
     for row in rows:
