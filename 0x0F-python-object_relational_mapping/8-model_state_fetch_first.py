@@ -1,7 +1,8 @@
 #!/usr/bin/python3
-"""List all state object."""
-import sys
+"""Link class to table in database"""
 
+
+import sys
 from model_state import Base, State
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
@@ -16,5 +17,8 @@ if __name__ == "__main__":
 
     Session = sessionmaker(bind=engine)
     session = Session()
-    for i in session.query(State).order_by(State.id):
+    i = session.query(State).first()
+    if i is None:
+        print("Nothing")
+    else:
         print(i.id, i.name, sep=": ")
