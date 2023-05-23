@@ -4,7 +4,7 @@ const request = require('request');
 
 // Check if a movie ID is provided as an argument
 if (process.argv.length < 3) {
-  console.log("Please provide a movie ID as an argument.");
+  console.log('Please provide a movie ID as an argument.');
   process.exit(1);
 }
 
