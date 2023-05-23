@@ -2,7 +2,7 @@
 
 const fs = require('fs');
 
-function readFile(filePath) {
+function readFile (filePath) {
   fs.readFile(filePath, 'utf-8', (error, content) => {
     if (error) {
       console.error(`An error occurred while reading the file: ${error}`);
@@ -14,7 +14,7 @@ function readFile(filePath) {
 
 // Check if a file path is provided as an argument
 if (process.argv.length < 3) {
-  console.log("Please provide a file path as an argument.");
+  console.log('Please provide a file path as an argument.');
   process.exit(1);
 }
 
