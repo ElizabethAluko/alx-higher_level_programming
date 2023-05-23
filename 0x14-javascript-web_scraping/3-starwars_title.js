@@ -21,7 +21,7 @@ request.get(apiUrl, (error, response, body) => {
   } else {
     if (response.statusCode === 200) {
       const movie = JSON.parse(body);
-      console.log(`Title: ${movie.title}`);
+      console.log(movie.title);
     } else {
       console.error(`Failed to fetch movie details. Status code: ${response.statusCode}`);
     }
