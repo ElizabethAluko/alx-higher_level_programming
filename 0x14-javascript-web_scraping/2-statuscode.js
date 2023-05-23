@@ -1,6 +1,6 @@
 #!/usr/bin/node
 
-const axios = require('axios');
+const request = require('request');
 
 // Check if a URL is provided as an argument
 if (process.argv.length < 3) {
@@ -12,10 +12,10 @@ if (process.argv.length < 3) {
 const url = process.argv[2];
 
 // Make the GET request
-axios.get(url)
-  .then(response => {
-    console.log(`code: ${response.status}`);
-  })
-  .catch(error => {
+request.get(url, (error, response) => {
+  if (error) {
     console.error(`An error occurred while making the request: ${error.message}`);
-  });
+  } else {
+    console.log(`code: ${response.statusCode}`);
+  }
+});
