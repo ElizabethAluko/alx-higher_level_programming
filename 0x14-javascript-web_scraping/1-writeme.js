@@ -2,7 +2,7 @@
 
 const fs = require('fs');
 
-function writeToFile(filePath, content) {
+function writeToFile (filePath, content) {
   fs.writeFile(filePath, content, 'utf-8', (error) => {
     if (error) {
       console.error(`An error occurred while writing to the file: ${error}`);
@@ -12,7 +12,7 @@ function writeToFile(filePath, content) {
 
 // Check if file path and content are provided as arguments
 if (process.argv.length < 4) {
-  console.log("Please provide a file path and content as arguments.");
+  console.log('Please provide a file path and content as arguments.');
   process.exit(1);
 }
 
