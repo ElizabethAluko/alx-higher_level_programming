@@ -4,7 +4,7 @@ const request = require('request');
 
 // Check if the API URL is provided as an argument
 if (process.argv.length < 3) {
-  console.log("Please provide the API URL as an argument.");
+  console.log('Please provide the API URL as an argument.');
   process.exit(1);
 }
 
