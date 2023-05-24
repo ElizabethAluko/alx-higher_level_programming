@@ -5,7 +5,7 @@ const fs = require('fs');
 
 // Check if the URL and file path are provided as arguments
 if (process.argv.length < 4) {
-  console.log("Please provide the URL and file path as arguments.");
+  console.log('Please provide the URL and file path as arguments.');
   process.exit(1);
 }
 
